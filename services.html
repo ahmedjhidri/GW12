@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive construction services by GWorks Construction in Tunisia. Residential, commercial, industrial, and renovation projects with quality and innovation.">
+    <meta name="keywords" content="construction services Tunisia, residential construction, commercial construction, industrial construction, renovation services, project management">
+    <meta name="author" content="GWorks Construction">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Construction Services - GWorks Construction Tunisia">
+    <meta property="og:description" content="Comprehensive construction services including residential, commercial, industrial, and renovation projects in Tunisia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gworks-construction.com/services">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Construction Services - GWorks Construction Tunisia</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="preload" href="styles.css" as="style">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Construction Services",
+        "provider": {
+            "@type": "Organization",
+            "name": "GWorks Construction"
+        },
+        "description": "Comprehensive construction services including residential, commercial, industrial, and renovation projects",
+        "areaServed": "Tunisia"
+    }
+    </script>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading">
+        <div class="text-center">
+            <div class="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-600 mx-auto mb-4"></div>
+            <h2 class="text-2xl font-bold text-gray-800 mb-2">GWorks Construction</h2>
+            <p class="text-gray-600">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-800"><span class="orange-g">G</span>Works Construction</div>
+            <div class="header-buttons">
+                <button id="dark-mode-toggle" class="md:hidden" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="menu-toggle" class="md:hidden" aria-label="Toggle Menu">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+            <nav class="space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600">About Us</a>
+                <a href="services.html" class="text-blue-600 font-medium" aria-current="page">Services</a>
+                <a href="projects.html" class="text-gray-700 hover:text-blue-600">Projects</a>
+                <a href="careers.html" class="text-gray-700 hover:text-blue-600">Careers</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+                <a href="blog.html" class="text-gray-700 hover:text-blue-600">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero h-screen flex items-center justify-center text-white relative" style="background-image: url('construction.jpg');">
+        <div class="text-center relative z-10 max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">Our Services at <span class="orange-g">G</span>Works Construction</h1>
+            <p class="text-xl md:text-2xl mb-8 animate-fade-in-delay">Comprehensive construction solutions tailored to your needs with quality and innovation.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
+                <a href="#residential" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 text-lg font-semibold">
+                    <i class="fas fa-home mr-2"></i>Residential
+                </a>
+                <a href="#commercial" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-gray-800 transition-all duration-300 transform hover:scale-105 text-lg font-semibold">
+                    <i class="fas fa-building mr-2"></i>Commercial
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 flex-grow">
+        <!-- Services Overview -->
+        <section class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">What We Offer</h2>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+            <p class="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+                At GWorks Construction, we provide a comprehensive range of construction services to meet the diverse needs of our clients across Tunisia. 
+                From residential homes to large-scale industrial projects, we deliver quality, innovation, and excellence in every project we undertake.
+            </p>
+        </section>
+
+        <!-- Residential Construction -->
+        <section id="residential" class="mb-16">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-8 lg:p-12">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-home text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-6">Residential Construction</h3>
+                        <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                            We specialize in building dream homes that combine quality, design, and functionality. From single-family homes to apartment complexes, 
+                            we bring your vision to life with attention to every detail.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Custom home design and construction</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Apartment complexes and multi-family units</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Luxury villas and estates</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Sustainable and energy-efficient homes</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 font-semibold">
+                            Get Residential Quote
+                        </a>
+                    </div>
+                    <div class="bg-gray-100 p-8 lg:p-12 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Residential Construction" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commercial Construction -->
+        <section id="commercial" class="mb-16">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="bg-gray-100 p-8 lg:p-12 flex items-center justify-center order-2 lg:order-1">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Commercial Construction" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                    </div>
+                    <div class="p-8 lg:p-12 order-1 lg:order-2">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-building text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-6">Commercial Construction</h3>
+                        <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                            We construct commercial spaces that enhance business operations and create lasting impressions. 
+                            Our commercial projects combine functionality with aesthetic appeal.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Office buildings and corporate headquarters</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Retail centers and shopping malls</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Hotels and hospitality venues</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Restaurants and entertainment venues</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 font-semibold">
+                            Get Commercial Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industrial Construction -->
+        <section id="industrial" class="mb-16">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-8 lg:p-12">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-industry text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-6">Industrial Construction</h3>
+                        <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                            We deliver robust industrial facilities designed for efficiency, safety, and productivity. 
+                            Our industrial projects meet the highest standards of quality and compliance.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Manufacturing plants and factories</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Warehouses and distribution centers</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Processing facilities and refineries</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Power plants and energy facilities</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 font-semibold">
+                            Get Industrial Quote
+                        </a>
+                    </div>
+                    <div class="bg-gray-100 p-8 lg:p-12 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Industrial Construction" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Renovation Services -->
+        <section id="renovations" class="mb-16">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="bg-gray-100 p-8 lg:p-12 flex items-center justify-center order-2 lg:order-1">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" 
+                             alt="Renovation Services" class="rounded-lg shadow-lg w-full h-64 object-cover">
+                    </div>
+                    <div class="p-8 lg:p-12 order-1 lg:order-2">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-tools text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-800 mb-6">Renovation & Remodeling</h3>
+                        <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                            We transform existing spaces through renovations and remodeling, enhancing functionality and modernizing designs 
+                            to meet contemporary standards and your specific requirements.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Interior remodeling and renovations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Exterior upgrades and facades</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Structural improvements and reinforcements</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Energy efficiency upgrades</span>
+                            </li>
+                        </ul>
+                        <a href="contact.html" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 font-semibold">
+                            Get Renovation Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Management -->
+        <section id="project-management" class="mb-16">
+            <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 rounded-lg">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-6">Project Management</h2>
+                    <div class="w-24 h-1 bg-white mx-auto mb-8"></div>
+                    <p class="text-xl max-w-3xl mx-auto">
+                        Our comprehensive project management services ensure your construction project is completed on time, 
+                        within budget, and to the highest quality standards.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center fade-in">
+                        <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-clock text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Timeline Management</h3>
+                        <p class="text-blue-200">Ensuring projects are completed on schedule</p>
+                    </div>
+                    <div class="text-center fade-in">
+                        <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-dollar-sign text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Budget Control</h3>
+                        <p class="text-blue-200">Managing costs and staying within budget</p>
+                    </div>
+                    <div class="text-center fade-in">
+                        <div class="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-award text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Quality Assurance</h3>
+                        <p class="text-blue-200">Maintaining the highest quality standards</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="text-center mb-12">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Ready to Start Your Project?</h2>
+                <p class="text-gray-600 mb-8 text-lg max-w-2xl mx-auto">
+                    Let's discuss your construction needs and how we can help bring your vision to life with our expertise and commitment to quality.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 font-semibold text-lg">
+                        <i class="fas fa-phone mr-2"></i>Get Free Consultation
+                    </a>
+                    <a href="projects.html" class="bg-transparent border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-105 font-semibold text-lg">
+                        <i class="fas fa-eye mr-2"></i>View Our Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Newsletter Section -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Stay Updated</h2>
+                <p class="text-gray-600 mb-8 text-lg">Subscribe to our newsletter for construction insights, project updates, and industry news.</p>
+                <form id="newsletter-form" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" id="newsletter-email" placeholder="Enter your email address" 
+                           class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                           required>
+                    <button type="submit" 
+                            class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 font-semibold">
+                        <i class="fas fa-paper-plane mr-2"></i>Subscribe
+                    </button>
+                </form>
+                <div id="newsletter-success" class="hidden mt-4 p-3 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+                    <i class="fas fa-check-circle mr-2"></i>Thank you for subscribing!
+                </div>
+                <p class="text-sm text-gray-500 mt-4">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4"><span class="orange-g">G</span>Works Construction</h4>
+                    <p>Leading construction services in Tunisia.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-400">About</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400">Services</a></li>
+                        <li><a href="projects.html" class="hover:text-blue-400">Projects</a></li>
+                        <li><a href="careers.html" class="hover:text-blue-400">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+                        <li><a href="blog.html" class="hover:text-blue-400">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/gworksconstructions" class="hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/gworks.tn" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <p>© 2025 GWorks Construction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Floating Contact Button -->
+    <div id="floating-contact" class="fixed bottom-20 left-4 z-50">
+        <button class="bg-green-600 text-white p-4 rounded-full shadow-lg hover:bg-green-700 transition-all duration-300 transform hover:scale-110" 
+                aria-label="Quick Contact" onclick="toggleContactMenu()">
+            <i class="fas fa-phone text-xl"></i>
+        </button>
+        <div id="contact-menu" class="hidden absolute bottom-16 left-0 bg-white rounded-lg shadow-xl p-4 min-w-64">
+            <h3 class="font-semibold text-gray-800 mb-3">Quick Contact</h3>
+            <div class="space-y-2 text-sm">
+                <div class="flex items-center">
+                    <i class="fas fa-phone text-green-600 mr-2"></i>
+                    <a href="tel:+21671123456" class="text-gray-700 hover:text-green-600">+216 71 123 456</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-envelope text-green-600 mr-2"></i>
+                    <a href="mailto:info@gworks.tn" class="text-gray-700 hover:text-green-600">info@gworks.tn</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-green-600 mr-2"></i>
+                    <span class="text-gray-700">Tunis, Tunisia</span>
+                </div>
+            </div>
+            <div class="mt-3 pt-3 border-t border-gray-200">
+                <a href="contact.html" class="block text-center bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors duration-300 text-sm">
+                    Get Quote
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Loading Screen
+        window.addEventListener('load', () => {
+            const loadingScreen = document.getElementById('loading-screen');
+            setTimeout(() => {
+                loadingScreen.classList.add('hidden');
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const toggleDarkMode = () => {
+            console.log("Dark mode toggle triggered");
+            document.body.classList.toggle('dark-mode');
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            darkModeToggle.innerHTML = isDarkMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+            localStorage.setItem('darkMode', isDarkMode);
+        };
+        darkModeToggle.addEventListener('click', toggleDarkMode);
+        darkModeToggle.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleDarkMode();
+        });
+
+        // Restore Dark Mode Preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+
+        // Hamburger Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.querySelector('nav');
+        const toggleMenu = () => {
+            console.log("Hamburger menu toggle triggered");
+            nav.classList.toggle('active');
+        };
+        menuToggle.addEventListener('click', toggleMenu);
+        menuToggle.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMenu();
+        });
+
+        // Close Menu When a Navigation Link is Clicked
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                console.log("Navigation link clicked, closing menu");
+                nav.classList.remove('active');
+            });
+            link.addEventListener('touchstart', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                console.log("Navigation link tapped, closing menu");
+                nav.classList.remove('active');
+                window.location.href = link.href;
+            });
+        });
+
+        // Sticky Header on Scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 0);
+        });
+
+        // Back to Top Button
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('visible', window.scrollY > 300);
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        backToTop.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Floating Contact Button
+        function toggleContactMenu() {
+            const contactMenu = document.getElementById('contact-menu');
+            contactMenu.classList.toggle('hidden');
+        }
+
+        // Newsletter Subscription
+        const newsletterForm = document.getElementById('newsletter-form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const email = document.getElementById('newsletter-email').value.trim();
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                
+                if (!emailRegex.test(email)) {
+                    alert('Please enter a valid email address');
+                    return;
+                }
+                
+                // Show success message
+                document.getElementById('newsletter-success').classList.remove('hidden');
+                newsletterForm.reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    document.getElementById('newsletter-success').classList.add('hidden');
+                }, 5000);
+                
+                // Here you would typically send the email to your backend
+                console.log('Newsletter subscription:', email);
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with fade-in class
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

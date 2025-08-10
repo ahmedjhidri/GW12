@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact GWorks Construction in Tunisia for inquiries, quotes, or project discussions.">
+    <meta name="keywords" content="contact GWorks Construction, construction inquiries Tunisia">
+    <title>GWorks Construction - Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Overlay for the map */
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+        }
+        .map-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .map-container:hover .map-overlay {
+            opacity: 1;
+        }
+        .map-overlay a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .map-overlay a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-800"><span class="orange-g">G</span>Works Construction</div>
+            <div class="header-buttons">
+                <button id="dark-mode-toggle" class="md:hidden" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="menu-toggle" class="md:hidden" aria-label="Toggle Menu">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+            <nav class="space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-blue-600">About Us</a>
+                <a href="services.html" class="text-gray-700 hover:text-blue-600">Services</a>
+                <a href="projects.html" class="text-gray-700 hover:text-blue-600">Projects</a>
+                <a href="careers.html" class="text-gray-700 hover:text-blue-600">Careers</a>
+                <a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a>
+                <a href="blog.html" class="text-gray-700 hover:text-blue-600">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero h-96 flex items-center justify-center text-white relative">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold mb-4">Contact <span class="orange-g">G</span>Works Construction</h1>
+            <p class="text-lg mb-6">We’re here to help with your construction needs.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 flex-grow">
+        <section class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Have a question or ready to start a project? Fill out the form below or reach out to us directly.</p>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="mb-12">
+            <div class="bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Send Us a Message</h3>
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                                   placeholder="Enter your full name">
+                            <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                                   placeholder="Enter your email address">
+                            <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-semibold mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                                   placeholder="Enter your phone number">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-gray-700 font-semibold mb-2">Service Type *</label>
+                            <select id="service" name="service" required 
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300">
+                                <option value="">Select a service</option>
+                                <option value="residential">Residential Construction</option>
+                                <option value="commercial">Commercial Projects</option>
+                                <option value="renovation">Renovations</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="budget" class="block text-gray-700 font-semibold mb-2">Project Budget</label>
+                        <select id="budget" name="budget" 
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300">
+                            <option value="">Select budget range</option>
+                            <option value="under-50k">Under 50,000 TND</option>
+                            <option value="50k-100k">50,000 - 100,000 TND</option>
+                            <option value="100k-250k">100,000 - 250,000 TND</option>
+                            <option value="250k-500k">250,000 - 500,000 TND</option>
+                            <option value="over-500k">Over 500,000 TND</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-gray-700 font-semibold mb-2">Project Details *</label>
+                        <textarea id="message" name="message" rows="6" required 
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-none"
+                                  placeholder="Tell us about your project, requirements, timeline, and any specific needs..."></textarea>
+                        <div class="error-message text-red-500 text-sm mt-1 hidden"></div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <input type="checkbox" id="newsletter" name="newsletter" class="mr-3">
+                        <label for="newsletter" class="text-gray-600">Subscribe to our newsletter for construction tips and updates</label>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" 
+                                class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 font-semibold text-lg w-full md:w-auto">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- Success Message -->
+                <div id="success-message" class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+                    <i class="fas fa-check-circle mr-2"></i>
+                    Thank you! Your message has been sent successfully. We'll get back to you within 24 hours.
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info -->
+        <section class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Contact Details</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-4 rounded">
+                    <p class="text-gray-600">
+                        <a href="tel:+21671123456" class="hover:underline hover:text-blue-600">+216 71 123 456</a>
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded">
+                    <p class="text-gray-600">
+                        <a href="mailto:info@gworks.tn" class="hover:underline hover:text-blue-600">info@gworks.tn</a>
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded">
+                    <p class="text-gray-600">123 Avenue Habib Bourguiba, Tunis, Tunisia</p>
+                </div>
+            </div>
+            <!-- Map with Clickable Overlay -->
+            <div class="mt-8">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.998735582093!2d10.181531315201!3d36.806494979947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd337f5e7e0f53%3A0x7b0a16b9e9c8f5b2!2sAvenue%20Habib%20Bourguiba%2C%20Tunis%2C%20Tunisia!5e0!3m2!1sen!2sus!4v1698161234567!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="map-overlay">
+                        <a href="https://www.google.com/maps/place/123+Avenue+Habib+Bourguiba,+Tunis,+Tunisia" target="_blank" rel="noopener noreferrer">Click to Open in Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4"><span class="orange-g">G</span>Works Construction</h4>
+                    <p>Leading construction services in Tunisia.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-400">About</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400">Services</a></li>
+                        <li><a href="projects.html" class="hover:text-blue-400">Projects</a></li>
+                        <li><a href="careers.html" class="hover:text-blue-400">Careers</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+                        <li><a href="blog.html" class="hover:text-blue-400">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/gworksconstructions" class="hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/gworks.tn" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <p>© 2025 GWorks Construction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const toggleDarkMode = () => {
+            console.log("Dark mode toggle triggered");
+            document.body.classList.toggle('dark-mode');
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            darkModeToggle.innerHTML = isDarkMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+            localStorage.setItem('darkMode', isDarkMode);
+        };
+        darkModeToggle.addEventListener('click', toggleDarkMode);
+        darkModeToggle.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleDarkMode();
+        });
+
+        // Restore Dark Mode Preference
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+
+        // Hamburger Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const nav = document.querySelector('nav');
+        const toggleMenu = () => {
+            console.log("Hamburger menu toggle triggered");
+            nav.classList.toggle('active');
+            const isOpen = nav.classList.contains('active');
+            menuToggle.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        };
+        menuToggle.addEventListener('click', toggleMenu);
+        menuToggle.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleMenu();
+        });
+
+        // Close Menu When a Navigation Link is Clicked
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                console.log("Navigation link clicked, closing menu");
+                nav.classList.remove('active');
+                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+            link.addEventListener('touchstart', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                console.log("Navigation link tapped, closing menu");
+                nav.classList.remove('active');
+                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                window.location.href = link.href;
+            });
+        });
+
+        // Sticky Header on Scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 0);
+        });
+
+        // Back to Top Button
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('visible', window.scrollY > 300);
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        backToTop.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Contact Form Submission (Basic Example)
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            console.log("Form submitted");
+            alert("Thank you for your message! We'll get back to you soon.");
+            contactForm.reset();
+        });
+
+        // Enhanced Contact Form Validation
+        if (contactForm) {
+            // Real-time validation
+            const inputs = contactForm.querySelectorAll('input, textarea, select');
+            inputs.forEach(input => {
+                input.addEventListener('blur', validateField);
+                input.addEventListener('input', clearError);
+            });
+
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                if (validateForm()) {
+                    // Show loading state
+                    const submitBtn = contactForm.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+                    submitBtn.disabled = true;
+                    
+                    // Simulate form submission
+                    setTimeout(() => {
+                        // Show success message
+                        document.getElementById('success-message').classList.remove('hidden');
+                        contactForm.reset();
+                        
+                        // Reset button
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        
+                        // Hide success message after 5 seconds
+                        setTimeout(() => {
+                            document.getElementById('success-message').classList.add('hidden');
+                        }, 5000);
+                    }, 2000);
+                }
+            });
+        }
+
+        function validateField(e) {
+            const field = e.target;
+            const value = field.value.trim();
+            const fieldId = field.id;
+            
+            clearError(field);
+            
+            switch(fieldId) {
+                case 'name':
+                    if (value.length < 2) {
+                        showFieldError(field, 'Name must be at least 2 characters long');
+                    }
+                    break;
+                case 'email':
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(value)) {
+                        showFieldError(field, 'Please enter a valid email address');
+                    }
+                    break;
+                case 'phone':
+                    if (value && !/^[\+]?[0-9\s\-\(\)]{8,}$/.test(value)) {
+                        showFieldError(field, 'Please enter a valid phone number');
+                    }
+                    break;
+                case 'message':
+                    if (value.length < 10) {
+                        showFieldError(field, 'Message must be at least 10 characters long');
+                    }
+                    break;
+                case 'service':
+                    if (!value) {
+                        showFieldError(field, 'Please select a service type');
+                    }
+                    break;
+            }
+        }
+
+        function showFieldError(field, message) {
+            const errorDiv = field.parentNode.querySelector('.error-message');
+            if (errorDiv) {
+                errorDiv.textContent = message;
+                errorDiv.classList.remove('hidden');
+                field.classList.add('border-red-500');
+            }
+        }
+
+        function clearError(e) {
+            const field = e.target;
+            const errorDiv = field.parentNode.querySelector('.error-message');
+            if (errorDiv) {
+                errorDiv.classList.add('hidden');
+                field.classList.remove('border-red-500');
+            }
+        }
+
+        function validateForm() {
+            const requiredFields = contactForm.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    showFieldError(field, 'This field is required');
+                    isValid = false;
+                }
+            });
+            
+            return isValid;
+        }
+
+        // Character counter for message field
+        const messageField = document.getElementById('message');
+        if (messageField) {
+            const counter = document.createElement('div');
+            counter.className = 'text-sm text-gray-500 mt-1';
+            messageField.parentNode.appendChild(counter);
+            
+            messageField.addEventListener('input', () => {
+                const length = messageField.value.length;
+                counter.textContent = `${length}/1000 characters`;
+                
+                if (length > 900) {
+                    counter.classList.add('text-red-500');
+                } else {
+                    counter.classList.remove('text-red-500');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
